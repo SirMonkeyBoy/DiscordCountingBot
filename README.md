@@ -37,8 +37,8 @@ docker build -t countingbot ./CountingBot/
         stdin_open: true
         tty: true
 
-Bot Token 1 should be the same
-Bot Token 2 should be diffrent to Bot Token 1
+Bot Token 1 should be the same token<br>
+Bot Token 2 should be a diffrent token to Bot Token 1
 
 #Starting the bot
 
