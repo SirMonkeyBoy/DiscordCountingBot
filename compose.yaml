@@ -5,23 +5,23 @@ services:
   CountingBotStart:
     image: countstart
     environment:
-      BOTTOKEN: 'bot token'
+      BOTTOKEN: 'Bot Token 1'
       COUNTSTARTNUMBER: '1'
     stdin_open: true
     tty: true
-
+      
   CountingBot1:
     image: countingbot
     environment:
-      BOTTOKEN: 'bot token'
+      BOTTOKEN: 'Bot Token 1'
       CHANNELID: 'Channel id'
     stdin_open: true
     tty: true
-
+    
   CountingBot2:
     image: countingbot
     environment:
-      BOTTOKEN: 'bot token'
+      BOTTOKEN: 'Bot Token 2'
       CHANNELID: 'Channel id'
     stdin_open: true
     tty: true

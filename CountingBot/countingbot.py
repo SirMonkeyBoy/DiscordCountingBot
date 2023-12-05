@@ -9,7 +9,7 @@ ChannelID = os.environ['CHANNELID']
 
 @client.event
 async def on_ready():
-    print('Counting bot 1 is online')
+    print('Counting bot is online')
 
 
 @client.event
