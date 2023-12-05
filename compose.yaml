@@ -1,0 +1,27 @@
+version: '3.5'
+
+services:
+
+  CountingBotStart:
+    image: countstart
+    environment:
+      BOTTOKEN: 'bot token'
+      COUNTSTARTNUMBER: '1'
+    stdin_open: true
+    tty: true
+
+  CountingBot1:
+    image: countingbot
+    environment:
+      BOTTOKEN: 'bot token'
+      CHANNELID: 'Channel id'
+    stdin_open: true
+    tty: true
+
+  CountingBot2:
+    image: countingbot
+    environment:
+      BOTTOKEN: 'bot token'
+      CHANNELID: 'Channel id'
+    stdin_open: true
+    tty: true
