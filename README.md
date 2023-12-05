@@ -38,7 +38,7 @@ docker build -t countingbot ./CountingBot/
         tty: true
 
 Bot Token 1 should be the same token<br>
-Bot Token 2 should be a diffrent token to Bot Token 1
+Bot Token 2 should be a diffrent token to Bot Token 1<br>
 Channel id is the channel you want the bot to work in
 
 # Starting the bot
