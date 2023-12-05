@@ -4,7 +4,7 @@ A discord bot that counts for ever
 #Buld commands
 Run where the readme file is
 
-docker build -t countstart ./CountingBotStart/
+docker build -t countstart ./CountingBotStart/<br>
 docker build -t countingbot ./CountingBot/
 
 #Compose
