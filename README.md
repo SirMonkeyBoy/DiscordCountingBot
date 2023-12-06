@@ -4,8 +4,7 @@
 ## Buld commands 
 Run where the readme file is
 
-docker build -t countstart ./CountingBotStart/<br>
-docker build -t countingbot ./CountingBot/
+    docker build -t countingbot:start ./CountingBotStart/ && docker build -t countingbot:bot ./CountingBot/
 
 ## Compose
 
@@ -14,7 +13,7 @@ docker build -t countingbot ./CountingBot/
     services:
 
      CountingBotStart:
-        image: countstart
+        image: countingbot:start
         environment:
             BOTTOKEN: 'Bot Token 1'
             COUNTSTARTNUMBER: '1'
@@ -22,7 +21,7 @@ docker build -t countingbot ./CountingBot/
         tty: true
       
     CountingBot1:
-        image: countingbot
+        image: countingbot:bot
         environment:
             BOTTOKEN: 'Bot Token 1'
             CHANNELID: 'Channel id'
@@ -30,7 +29,7 @@ docker build -t countingbot ./CountingBot/
         tty: true
     
     CountingBot2:
-        image: countingbot
+        image: countingbot:bot
         environment:
             BOTTOKEN: 'Bot Token 2'
             CHANNELID: 'Channel id'

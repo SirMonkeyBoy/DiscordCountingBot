@@ -3,7 +3,7 @@ version: '3.5'
 services:
 
   CountingBotStart:
-    image: countstart
+    image: countingbot:start
     environment:
       BOTTOKEN: 'Bot Token 1'
       COUNTSTARTNUMBER: '1'
@@ -11,7 +11,7 @@ services:
     tty: true
       
   CountingBot1:
-    image: countingbot
+    image: countingbot:bot
     environment:
       BOTTOKEN: 'Bot Token 1'
       CHANNELID: 'Channel id'
@@ -19,7 +19,7 @@ services:
     tty: true
     
   CountingBot2:
-    image: countingbot
+    image: countingbot:bot
     environment:
       BOTTOKEN: 'Bot Token 2'
       CHANNELID: 'Channel id'
