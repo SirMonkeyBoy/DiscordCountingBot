@@ -14,8 +14,13 @@ async def on_ready():
 
 
 @bot.command()
-async def start(ctx):
-    await ctx.send(CountStartNumber)
-    print('Count started')
+async def start(ctx, arg=None):
+    if arg is None:
+        await ctx.send(CountStartNumber)
+        print('started')
+    else:
+        await ctx.send(f'{arg}')
+        print('started')
+
 
 bot.run(BotToken)
