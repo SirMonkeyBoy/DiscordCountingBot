@@ -53,8 +53,8 @@ all commands are run in the spot where the readme is
         stdin_open: true
         tty: true
 
-Bot Token 1 should be the same token<br>
-Bot Token 2 should be a diffrent token to Bot Token 1<br>
+Bot Token 1<br>
+Bot Token 2 has to be a diffrent token to Bot Token 1<br>
 Channel id is the channel you want the bot to work in<br>
 Bot 1 and 2 user id is their user/bot id is not the same as bot token<br>
 example id 170733454822341405
