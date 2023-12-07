@@ -1,6 +1,6 @@
 FROM python:3.9.18-alpine3.18
 
-ADD countingbot1.py .
+ADD countingbot.py .
 ADD requirements.txt .
 
 RUN pip install -r requirements.txt
